@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function totalSalary()
+{
+let basic = parseFloat(document.getElementById("sal").value);
+let hra = 0.15 * basic;
+let da = 0.2 * basic;
+let ta = 0.25 * basic ;
+let total = basic + hra + da + ta ;
+document.getElementById("total").innerHTML= "Total :" + total ;
+}
+</script>
+</head>
+<body>
+Enter Basic Salary : <input type="text" id="sal"/>
+<button onclick="totalSalary()"> Find Total Salary </button>
+<p id="total"> </p>
+</body>
+</html>
